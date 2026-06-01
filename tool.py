@@ -15,6 +15,7 @@ class Movie(BaseModel):
     release_year: int = Field(..., description="The release year of the movie")
     director: str = Field(..., description="The director of the movie")
     rating: float = Field(..., description="The rating of the movie")
+    rating: float = Field(..., description="The rating of the movie")
 
 model_with_structured_output = model.with_structured_output(Movie)
 response = model_with_structured_output.invoke("What is the movie Openheimer about?")
