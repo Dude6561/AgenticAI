@@ -20,3 +20,7 @@ class Movie(BaseModel):
 model_with_structured_output = model.with_structured_output(Movie)
 response = model_with_structured_output.invoke("What is the movie Openheimer about?")
 print(response)
+
+##midelware function what run in middle to chekc certian condition before the tool is executed
+##summarizaton human in loop
+#  model call limit
